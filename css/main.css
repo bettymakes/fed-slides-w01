@@ -1,0 +1,183 @@
+.custom .text-highlight {
+  color: #42affa;
+}
+
+.custom .bg-highlight {
+  background-color: #42affa;
+}
+
+.custom .text-center {
+  text-align: center;
+}
+
+.custom .text-left {
+  text-align: left;
+}
+
+.custom .v-align-middle {
+  vertical-align: middle;
+}
+
+.custom .no-margins {
+  margin: 0;
+}
+
+.custom .light-text {
+  font-weight: lighter;
+}
+
+.custom .bm-down-arrow img {
+  background: none;
+  border: 0;
+  box-shadow: none;
+  transform: rotate(180deg);
+  margin: 0;
+}
+
+.custom .bm-down-arrow a:hover img {
+  border-radius: 50%;
+}
+
+.custom .small-header {
+  font-size: 0.9em;
+  text-align: left;
+  position: relative;
+  bottom: 1.5em;
+}
+
+.custom .comment {
+  margin: 1.5em 0 0 0;
+  font-size: 0.8em;
+}
+
+.comment li {
+  margin-bottom: 0.5em;
+}
+
+.custom .margin-top-2em {
+  margin-top: 2em;
+}
+
+.custom .pad-2em {
+  padding: 2em;
+}
+
+.custom .pre.bm {
+  display: block;
+  position: relative;
+  width: 90%;
+  margin: 20px auto;
+  text-align: left;
+  font-size: 0.55em;
+  font-family: monospace;
+  line-height: 1.2em;
+  word-wrap: break-word;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.3);
+}
+
+.custom .pre.bm .code {
+  display: block;
+  overflow: auto;
+  max-height: 400px;
+  word-wrap: normal;
+  background: #3F3F3F;
+  color: #DCDCDC;
+}
+
+#intro {
+  text-align: left;
+}
+
+#intro .header {
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+#welcome small {
+  vertical-align: middle;
+}
+
+#goals .header {
+  margin: 0 0 0.5em 0;
+}
+
+#goals ul {
+  margin: 0 0 1em 1em;
+}
+
+#goals li {
+  font-size: 0.75em;
+  margin-bottom: 0.5em;
+}
+
+#class-format li {
+  font-size: 0.75em;
+  margin-bottom: 0.5em;
+}
+
+#class-format small {
+  vertical-align: middle;
+}
+
+#about-you li {
+  font-size: 0.75em;
+  margin-bottom: 0.5em;
+}
+
+#our-expectations .header {
+  margin: 0 0 0.5em 0;
+}
+
+#our-expectations ul {
+  margin: 0 0 1em 1em;
+}
+
+#our-expectations li {
+  font-size: 0.75em;
+  margin-bottom: 0.5em;
+}
+
+#our-expectations p {
+  font-size: 0.85em;
+}
+
+
+#what-is-fed p {
+  font-size: 0.75em;
+}
+
+#what-is-fed .header {
+  font-size: 1em;
+}
+
+#what-is-fed table th, #what-is-fed table td {
+  border-bottom: 0;
+  width: 50%;
+  vertical-align: top;
+}
+
+#what-is-fed table td {
+  font-size: 0.7em;
+}
+
+#what-is-fed table th {
+  text-transform: uppercase;
+  font-size: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+#what-is-fed li {
+  margin-bottom: 0.5em;
+}
+
+#what-is-fed hr {
+  margin: 1.25em;
+}
+
+#html-hierarchy pre {
+  box-shadow: none;
+}
+
+#html-hierarchy code {
+  padding: 2em;
+}

@@ -1,10 +1,9 @@
-<!doctype html>
-<html lang="en">
-
+<!DOCTYPE html>
+<html>
 	<head>
 		<meta charset="utf-8">
 
-		<title>reveal.js - The HTML Presentation Framework</title>
+		<title>Intro to FED & HTML Fundamentals</title>
 
 		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
 		<meta name="author" content="Hakim El Hattab">
@@ -14,9 +13,12 @@
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/black.css" id="theme">
-
+		<link rel="stylesheet" href="css/main.css">
+		
 		<!-- Code syntax highlighting -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
 
@@ -36,331 +38,665 @@
 
 	<body>
 
-		<div class="reveal">
+		<div class="reveal custom">
 
-			<!-- Any section element inside of this container is displayed as a slide -->
-			<div class="slides">
-				<section>
-					<h1>Reveal.js</h1>
-					<h3>The HTML Presentation Framework</h3>
-					<p>
-						<small>Created by <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small>
-					</p>
+			<div class="slides">  
+				<section id="intro">
+					<h2 class="header">Intro to FED <br>
+						&amp; <br>
+						HTML <br>
+						Fundamentals</h2>
 				</section>
 
-				<section>
-					<h2>Hello There</h2>
+				<section id="welcome">
+					<h2>Hello Friends!</h2>
 					<p>
-						reveal.js enables you to create beautiful interactive slide decks using HTML. This presentation will show you examples of what it can do.
+						Welcome to 
+						<span class="text-highlight">F</span>ront 
+						<span class="text-highlight">E</span>nd 
+						<span class="text-highlight">D</span>evelopment <small>(aka FED)</small>
 					</p>
-				</section>
-
-				<!-- Example of nested vertical slides -->
-				<section>
-					<section>
-						<h2>Vertical Slides</h2>
-						<p>Slides can be nested inside of each other.</p>
-						<p>Use the <em>Space</em> key to navigate through all slides.</p>
+					<img src="http://25.media.tumblr.com/37c4312906aae2f79a212e0ffa45348d/tumblr_muf092EcSB1r67n1ro1_500.gif" alt="Typing Gif">
+					<p class="no-margins">
+						<small>fed@bitmakerlabs.com</small>
+					</p>
+					<aside class="notes">
+						- May hear us affectionately refer to course as 'FED' in the coming weeks, short for Front End Dev. Yay for acronyms!
 						<br>
-						<a href="#" class="navigate-down">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 1</h2>
-						<p>Nested slides are useful for adding additional detail underneath a high level horizontal slide.</p>
-					</section>
-					<section>
-						<h2>Basement Level 2</h2>
-						<p>That's it, time to go back up.</p>
+						- Love gifs!
 						<br>
-						<a href="#/2">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="transform: rotate(180deg); -webkit-transform: rotate(180deg);">
-						</a>
-					</section>
+						- Speak for Rocco, Ellen, and I to say we're excited to share the next 12 Tuesdays
+						<br>
+						- Pumped to watch you learn, grow, build cool things 
+						<br>
+						- First order of business: Email us at fed@bml
+					</aside>
 				</section>
 
-				<section>
-					<h2>Slides</h2>
+				<section id="wifi">
+					<h2>Le Wifi Password</h2>
 					<p>
-						Not a coder? Not a problem. There's a fully-featured visual editor for authoring these, try it out at <a href="http://slides.com" target="_blank">http://slides.com</a>.
+						bitmaker0011
 					</p>
+					<aside class="notes">
+						On to the important stuff! 
+						<br>
+						Bitmaker wifi is bitmaker
+					</aside>
 				</section>
 
-				<section>
-					<h2>Point of View</h2>
-					<p>
-						Press <strong>ESC</strong> to enter the slide overview.
-					</p>
-					<p>
-						Hold down alt and click on any element to zoom in on it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Alt + click anywhere to zoom back out.
-					</p>
-				</section>
-
-				<section>
-					<h2>Touch Optimized</h2>
-					<p>
-						Presentations look great on touch devices, like mobile phones and tablets. Simply swipe through your slides.
-					</p>
+				
+				<section id="agenda">
+					<h2>Agenda</h2>
+					<ol>
+						<li>What is FED?</li>
+						<li>Goals</li>
+						<li>Projects You'll Build</li>
+						<li>Format of Each Class</li>
+						<li>Tools You'll Be Using</li>
+						<li>Our Expectations of You</li>
+						<li>About You</li>
+						<li>HTML fun timez!</li>
+					</ol>
+					<aside class="notes">
+						Here's an overview for today's class
+						<br>
+						1) We'll go over the goals for this course and expected outcomes. Make sure everyone's on the same page in terms of expectations.
+					</aside>
 				</section>
 				
-				<section>
-					<section id="fragments">
-						<h2>Fragments</h2>
-						<p>Hit the next arrow...</p>
-						<p class="fragment">... to step through ...</p>
-						<p><span class="fragment">... a</span> <span class="fragment">fragmented</span> <span class="fragment">slide.</span></p>
-
-						<aside class="notes">
-							This slide has fragments which are also stepped through in the notes window.
-						</aside>
-					</section>
-					<section>
-						<h2>Fragment Styles</h2>
-						<p>There's different types of fragments, like:</p>
-						<p class="fragment grow">grow</p>
-						<p class="fragment shrink">shrink</p>
-						<p class="fragment fade-out">fade-out</p>
-						<p class="fragment current-visible">current-visible</p>
-						<p class="fragment highlight-red">highlight-red</p>
-						<p class="fragment highlight-blue">highlight-blue</p>
-					</section>
-				</section>
-
-				<section id="transitions">
-					<h2>Transition Styles</h2>
-					<p>
-						You can select from different transitions, like: <br>
-						<a href="?transition=none#/transitions">None</a> -
-						<a href="?transition=fade#/transitions">Fade</a> -
-						<a href="?transition=slide#/transitions">Slide</a> -
-						<a href="?transition=convex#/transitions">Convex</a> -
-						<a href="?transition=concave#/transitions">Concave</a> -
-						<a href="?transition=zoom#/transitions">Zoom</a>
-					</p>
-				</section>
-
-				<section id="themes">
-					<h2>Themes</h2>
-					<p>
-						reveal.js comes with a few themes built in: <br>
-						<!-- Hacks to swap themes after the page has loaded. Not flexible and only intended for the reveal.js demo deck. -->
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/black.css'); return false;">Black (default)</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/white.css'); return false;">White</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/league.css'); return false;">League</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/sky.css'); return false;">Sky</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/beige.css'); return false;">Beige</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/simple.css'); return false;">Simple</a> <br>
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/serif.css'); return false;">Serif</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/blood.css'); return false;">Blood</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/night.css'); return false;">Night</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/moon.css'); return false;">Moon</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/solarized.css'); return false;">Solarized</a>
-					</p>
-				</section>
-
-				<section>
-					<section data-background="#dddddd">
-						<h2>Slide Backgrounds</h2>
-						<p>
-							Set <code>data-background="#dddddd"</code> on a slide to change the background color. All CSS color formats are supported.
-						</p>
-						<a href="#" class="navigate-down">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png">
-						<h2>Image Backgrounds</h2>
-						<pre><code>&lt;section data-background="image.png"&gt;</code></pre>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png" data-background-repeat="repeat" data-background-size="100px">
-						<h2>Tiled Backgrounds</h2>
-						<pre><code style="word-wrap: break-word;">&lt;section data-background="image.png" data-background-repeat="repeat" data-background-size="100px"&gt;</code></pre>
-					</section>
-					<section data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm" data-background-color="#000000">
-						<div style="background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px;">
-							<h2>Video Backgrounds</h2>
-							<pre><code style="word-wrap: break-word;">&lt;section data-background-video="video.mp4,video.webm"&gt;</code></pre>
-						</div>
-					</section>
-					<section data-background="http://i.giphy.com/90F8aUepslB84.gif">
-						<h2>... and GIFs!</h2>
-					</section>
-				</section>
-
-				<section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
-					<h2>Background Transitions</h2>
-					<p>
-						Different background transitions are available via the backgroundTransition option. This one's called "zoom".
-					</p>
-					<pre><code>Reveal.configure({ backgroundTransition: 'zoom' })</code></pre>
-				</section>
-
-				<section data-transition="slide" data-background="#b5533c" data-background-transition="zoom">
-					<h2>Background Transitions</h2>
-					<p>
-						You can override background transitions per-slide.
-					</p>
-					<pre><code style="word-wrap: break-word;">&lt;section data-background-transition="zoom"&gt;</code></pre>
-				</section>
-
-				<section>
-					<h2>Pretty Code</h2>
-					<pre><code data-trim contenteditable>
-function linkify( selector ) {
-  if( supports3DTransforms ) {
-
-    var nodes = document.querySelectorAll( selector );
-
-    for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
-      var node = nodes[i];
-
-      if( !node.className ) {
-        node.className += ' roll';
-      }
-    }
-  }
-}
-					</code></pre>
-					<p>Code syntax highlighting courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
-				</section>
-
-				<section>
-					<h2>Marvelous List</h2>
-					<ul>
-						<li>No order here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-					</ul>
-				</section>
-
-				<section>
-					<h2>Fantastic Ordered List</h2>
-					<ol>
-						<li>One is smaller than...</li>
-						<li>Two is smaller than...</li>
-						<li>Three!</li>
-					</ol>
-				</section>
-
-				<section>
-					<h2>Tabular Tables</h2>
+				<section id="what-is-fed" class="text-left">
+					<h2 class="header">Development</h2>
+					<p>The development process can be broken into two seperate responsibilities:</p>
+					<hr>
 					<table>
 						<thead>
 							<tr>
-								<th>Item</th>
-								<th>Value</th>
-								<th>Quantity</th>
+								<th>Front-End Web Development</th>
+								<th>Back-End Web Development</th>
 							</tr>
 						</thead>
 						<tbody>
 							<tr>
-								<td>Apples</td>
-								<td>$1</td>
-								<td>7</td>
-							</tr>
-							<tr>
-								<td>Lemonade</td>
-								<td>$2</td>
-								<td>18</td>
-							</tr>
-							<tr>
-								<td>Bread</td>
-								<td>$3</td>
-								<td>2</td>
+								<td>
+									<ul>
+										<li>How things look to the user</li>
+										<li>Involves: Images, Content, Structure</li>
+										<li>HTML, CSS, &amp; Javascript</li>
+									</ul>
+								</td>
+								<td>
+									<ul>
+										<li>How things work</li>
+										<li>Involves: "business logic"</li>
+										<li>Ruby, PHP, C++, Java, etc.</li>
+									</ul>
+								</td>
 							</tr>
 						</tbody>
 					</table>
-				</section>
-
-				<section>
-					<h2>Clever Quotes</h2>
-					<p>
-						These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;The nice thing about standards is that there are so many to choose from&rdquo;</q> and block:
-					</p>
-					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
-						reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
-					</blockquote>
-				</section>
-
-				<section>
-					<h2>Intergalactic Interconnections</h2>
-					<p>
-						You can link between slides internally,
-						<a href="#/2/3">like this</a>.
-					</p>
-				</section>
-
-				<section>
-					<h2>Speaker View</h2>
-					<p>There's a <a href="https://github.com/hakimel/reveal.js#speaker-notes">speaker view</a>. It includes a timer, preview of the upcoming slide as well as your speaker notes.</p>
-					<p>Press the <em>S</em> key to try it out.</p>
-
 					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
+						- Dev process can typically be broken into 2 seperate responsibilities: FED & BED
+						<br>
+						<br>
+						- Not going to get into this too much, at a high level overview FED is how things look to the user ... (read the rest)
+						<br>
+						<br>
+						- Let's look at a quick example: Github's Search, Eventix contact form
+
+					
+					</aside>
+				</section>
+				<section>
+					<section id="goals" class="text-left">
+						<h2 class="header">Goals</h2>
+							<ul>
+								<li>Becoming proficient with HTML and CSS</li>
+								<li>Understanding the basics of Javascript</li>
+								<li>Full comprehension of the inter-dependance of HTML, CSS and JS</li>
+								<li>Getting comfortable and efficient with web development tools</li>
+								<li>Learning how to approach designing for different platforms & devices</li>
+								<li>How to add interactivity to designs to bring them to life</li>
+							</ul>
+							<div class="text-center bm-down-arrow">
+								<a href="#" class="navigate-down">
+									<img width="80" height="80" data-src="http://bettymakes.com/assets/images/flat-circle-arrow-up.png" alt="Down arrow">
+								</a>
+							</div>
+							<aside class="notes">
+								- One of main goals is proficiency with HTML and CSS
+								<br>
+								<br>
+								- It's important because HTML and CSS are the fundamental pilars to building a website so that's why our goal is to help you to become comfortable and proficient with HTML & CSS
+								<br>
+								<br>
+								- Another language we'll be covering is JS. Undestand basics of JS
+								<br>
+								<br>
+								- Overall goal is to work towards completing cumulative project, will be building on concepts learned week to week.
+								<br>
+								<br>
+								- Rise of mobile devices, learn to develop responsive websites.
+								<br>
+								<br> 
+								- Can't only build desktop website, bad user experience. Need to cater to mobile users.
+								<br>
+								<br>
+								- When we get into JS, you'll be able to add interactivty to your website with jQuery plugins
+							</aside>
+					</section>
+					<section id="goals-2">
+						<p>You might feel like this right now ...</p>
+						<img src="http://media.giphy.com/media/H8bzCgnzMVgWs/giphy.gif" alt="Panic Typing">
+						<aside class="notes">
+							- If you have 0 experience, you might feel like this today
+							<br>
+							<br>
+							- Even if you have experience, you might feel like this at some point
+						</aside>
+					</section>
+					<section id="goals-3">
+						<p>By the end of the 12 weeks, you'll be a boss :).</p>
+						<img src="http://bettymakes.com/assets/images/dev-like-a-boss.gif" alt="Developing like a pro">
+					</section>
+					<aside class="notes">
+						- You'll be pros in 12 weeks
+					</aside>
+				</section>
+				
+				<section id="projects">
+					<h2>Projects</h2>
+					<p>We'll focus on building two projects:</p>
+					<ol>
+						<li>Resume website</li>
+						<li>Course Project of your choosing</li>
+					</ol>
+					<aside class="notes">
+						- Over course of 12 weeks, we'll be working on 2 projects alongside other assignments
 					</aside>
 				</section>
 
-				<section>
-					<h2>Export to PDF</h2>
-					<p>Presentations can be <a href="https://github.com/hakimel/reveal.js#pdf-export">exported to PDF</a>, here's an example:</p>
-					<iframe src="//www.slideshare.net/slideshow/embed_code/42840540" width="445" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
-				</section>
-
-				<section>
-					<h2>Global State</h2>
-					<p>
-						Set <code>data-state="something"</code> on a slide and <code>"something"</code>
-						will be added as a class to the document element when the slide is open. This lets you
-						apply broader style changes, like switching the page background.
-					</p>
-				</section>
-
-				<section data-state="customevent">
-					<h2>State Events</h2>
-					<p>
-						Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
-					</p>
-					<pre><code class="javascript" data-trim contenteditable style="font-size: 18px;">
-Reveal.addEventListener( 'customevent', function() {
-	console.log( '"customevent" has fired' );
-} );
-					</code></pre>
-				</section>
-
-				<section>
-					<h2>Take a Moment</h2>
-					<p>
-						Press B or . on your keyboard to pause the presentation. This is helpful when you're on stage and want to take distracting slides off the screen.
-					</p>
-				</section>
-
-				<section>
-					<h2>Much more</h2>
+				<section id="class-format" >
+					<h2>Class Format</h2>
 					<ul>
-						<li>Right-to-left support</li>
-						<li><a href="https://github.com/hakimel/reveal.js#api">Extensive JavaScript API</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#auto-sliding">Auto-progression</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#parallax-background">Parallax backgrounds</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#keyboard-bindings">Custom keyboard bindings</a></li>
+						<li>Welcome and opening Q&A <small>(6:30-6:40, 10 minutes)</small></li>
+						<li>Lecture <small>(6:40-7:25, 45 minutes)</small></li>
+						<li>Drills <small>(7:25-7:55, 30 minutes)</small></li>
+						<li>Break <small>(7:55-8:05, 10 minutes)</small></li>
+						<li>Lecture <small>(8:05-8:50, 45 minutes)</small></li>
+						<li>Drills <small>(8:50-9:20, 30 minutes)</small></li>
+						<li>Summary, Q&A and Assignment Intro <small>(9:20-9:30, 10 minutes)</small></li>
 					</ul>
+					<aside class="notes">
+						- This is a rough guideline
+						<br>
+						<br>
+						- Trying to talk at you less, make the class more interactive
+						<br>
+						<br>
+						- In fact, for two classes, we'll have pre-recorded content for you to watch prior to the class. When you get to class, we'll review the material and have more time for doing in class drills together.
+						<br>
+						<br>
+						- To encourage you to be more actively engaged in the class.
+					</aside>
 				</section>
 
-				<section style="text-align: left;">
-					<h1>THE END</h1>
-					<p>
-						- <a href="http://slides.com">Try the online editor</a> <br>
-						- <a href="https://github.com/hakimel/reveal.js">Source code &amp; documentation</a>
-					</p>
+				<section id="course-tools">
+					<h2>Tools</h2>
+					<ul>
+						<li>
+							<a href="https://alexa.bitmakerlabs.com/">Alexa</a>
+						</li>
+						<li>
+							<a href="http://www.sublimetext.com/3">Sublime Text 3</a>
+						</li>
+						<li>
+							<a href="www.google.com/chrome‎/">Google Chrome</a>
+						</li>
+						<li>
+							<a href="https://git-scm.com/">Git</a>
+						</li>
+						<li>
+							<a href="https://github.com/join">Github</a>
+						</li>
+					</ul>
+					<aside class="notes">
+						- Alexa is same as webct, owl, blackboard learning ... Bitmaker's LMS
+						<br>
+						<br>
+						- Sublime is our text editor of choice. Uses nag-ware, but don't have to buy. Can use any text editor you want.
+						<br>
+						<br>
+						- We prefer Chrome because of speed, ease-of-use, developer friendly (dev tools)
+						<br>
+						<br>
+						- Git & Github will be installing together in week 3. Just wanted to give a heads up
+					</aside>
 				</section>
 
+				<section id="our-expectations" class="text-left">
+					<h2 class="header">Our Expectations</h2>
+					<p class="light-text">Learning how to code is like going to the gym ...</p>
+					<hr>
+					<ul>
+						<li>Commit 4 - 6 hours a week to complete assignments</li>
+						<li>Reach out when you need a hand</li>
+						<li>Come to office hours</li>
+						<li>Practice. Practice. Practice.</li>
+					</ul>
+					<aside class="notes">
+						- We discussed what you can expect, but think it's important to go over what <em>we</em> expect of <em>you</em>
+						<br>
+						<br>
+						- Learning to code is like going to the gym, it's a muscle. If you don't work it out, you lose it.
+
+					</aside>
+				</section>
+
+				<section id="about-you">
+					<h2>About You</h2>
+					<p>We want to learn more about you :)!</p>
+					<ol>
+						<li>What's your name?</li>
+						<li>What do you do during the day?</li>
+						<li>Why are you taking this course?</li>
+						<li>Guilty Pleasure? <small class="v-align-middle text-highlight">( OPTIONAL )</small></li>
+					</ol>
+					<aside class="notes">
+						- Since we're spending 12 weeks together, we'd love to get to know each of you a little better
+						<br>
+						<br>
+						- Betty, Developer, J Biebs? My Little Pony? Perez Hilton
+					</aside>
+				</section>
+		
+				<section id="html-intro">
+					<h2>HTML Fundamentals</h2>
+					<aside class="notes">
+						Who has some knowledge of HTML?
+						<br>
+						<br>
+						Dabbled in it a bit? 
+					</aside>
+				</section>
+				
+				<section>
+					<section id="markup-basics">
+						<h2>HTML</h2>
+						<p>
+							<span class="text-highlight">H</span>yper<span class="text-highlight">T</span>ext 
+							<span class="text-highlight">M</span>arkup 
+							<span class="text-highlight">L</span>anguage</p>
+							<div class="text-center bm-down-arrow">
+								<a href="#" class="navigate-down">
+									<img width="80" height="80" data-src="http://bettymakes.com/assets/images/flat-circle-arrow-up.png" alt="Down arrow">
+								</a>
+							</div>
+
+							<aside class="notes">
+								Markup Basics
+								<br>
+								<br>
+								HTML stands for Hypertext 
+								<br>
+								<br>
+								Language used to describe your document on the World Wide Web
+							</aside>
+					</section>
+					<section id="html-history">
+						<h2>HTML History</h2>
+						<ul>
+							<li>Invented by Sir Tim Berners-Lee</li>
+							<li>Created the first web browser</li>
+							<li>Wanted to share academic papers in a digital format</li>
+						</ul>
+						<aside class="notes">
+							- Tim Berners Lee is the 'god-father' of the world wide web, he invented it
+							<br>
+							<br>
+							- Came from academic background, wanted to share academic papers with others in this digital format
+							<br>
+							<br>
+							- So he has a document, with a specific formatting: paragraphs, headers, tabular data etc. 
+							<br>
+							<br>
+							- Needed to find a way to describe these documents, purpose being to provide meaning to a computer in terms of what content its rendering. 
+							<br>
+							<br>
+							- Came up with HTML. That's what the markup language was created for, to semantically describe your documents.
+						</aside>
+					</section>
+				</section>
+				
+				<section>
+					<section id="tag-overview" data-transition="slide" data-background="#1E68A7" data-background-transition="zoom">
+						<h2 class="small-header">HTML Tag Anatomy</h2>
+						<pre><code style="word-wrap: break-word;" class="text-center pad-2em">&lt;p id="unique" class="group"&gt;Some Content&lt;/p&gt;</code></pre>
+						<p class="comment">
+							This is an example of a paragraph tag.
+						</p>
+						<div class="text-center bm-down-arrow margin-top-2em">
+								<a href="#" class="navigate-down">
+									<img width="80" height="80" data-src="http://bettymakes.com/assets/images/flat-circle-arrow-up.png" alt="Down arrow">
+								</a>
+							</div>
+					</section>
+					<section id="opening-tag" data-transition="slide" data-background="#1E68A7">
+						<h2 class="small-header">HTML Tag Anatomy</h2>
+						<div class="pre bm">
+							<div class="text-center pad-2em code" style="word-wrap: break-word;">
+								<span class="text-highlight">&lt;p id="unique" class="group"&gt;</span>Some Content&lt;/p&gt;
+							</div>
+						</div>
+						<p class="comment">
+							This is the <strong>opening tag</strong>.
+						</p>
+						<ul class="comment">
+							<li>Starts with a tag name <span class="text-highlight">p</span> in this case</li>
+							<li>HTML tags always start with a 
+								<span class="text-highlight">&lt;</span> and end with a 
+								<span class="text-highlight">&gt;</span>
+							</li>
+						</ul>
+						<aside class="notes">
+							- This is the opening tag
+							<br>
+							<br>
+							- Opening tags always starts with a tag name, it's p in this case which stands for paragraph
+							<br>
+							<br>
+							- All HTML tags start with an 'lt' angle bracket and end with a 'gt' bracket
+							<br>
+							<br>
+							- Denotes the beginning and end of a tag 
+						</aside>
+					</section>
+
+					<section id="closing-tag" data-transition="slide" data-background="#1E68A7">
+						<h2 class="small-header">HTML Tag Anatomy</h2>
+						<div class="pre bm">
+							<div class="text-center pad-2em code" style="word-wrap: break-word;">
+								&lt;p id="unique" class="group"&gt;Some Content<span class="text-highlight">&lt;/p&gt;</span>
+							</div>
+						</div>
+						<p class="comment">
+							This is the <strong>closing tag</strong>.
+						</p>
+						<ul class="comment">
+							<li><em>Most</em> (but not all) HTML tags have a closing tag</li>
+							<li>Starts with forward slash ( <span class="text-highlight">/</span> ) followed by the tag name ( <span class="text-highlight">p</span> ) in this case</li>				
+						</ul>
+						<aside class="notes">
+							- (Read slide)
+							<br>
+							<br>
+							- So if the tag starts as a p tag, it ends with a p tag.
+							<br>
+							<br>
+							- It's important to remember the forward slash in the closing tag, if you forget it - you're starting a new tag without closing the first one.
+							<br>
+							<br>
+							- ALWAYS remember forward slash when closing a tag
+						</aside>
+					</section>
+
+					<section id="tag-content" data-transition="slide" data-background="#1E68A7">
+						<h2 class="small-header">HTML Tag Anatomy</h2>
+						<div class="pre bm">
+							<div class="text-center pad-2em code" style="word-wrap: break-word;">
+								&lt;p id="unique" class="group"&gt;<span class="text-highlight">Some Content</span>&lt;/p&gt;
+							</div>
+						</div>
+						<p class="comment">
+							This is the <strong>content of the tag</strong>.
+						</p>
+						<ul class="comment">
+							<li>The content sits between the opening and closing tags</li>
+							<li>This is the content that appears on your page</li>							
+						</ul>
+						<aside class="notes">
+							- (Read slide)
+							<br>
+							<br>
+							- So when browser looks at your markup, the tags give it context. 
+							<br>
+							<br>
+							- In this case, it knows it's going to render a paragraph.
+							<br>
+							<br>
+							- It then looks at the content between your opening and closing tag and renders it to the page. 
+							<br>
+							<br>
+							- Remember how we mentioned MOST tags have opening and closing tags? Since we know that the browser will <strong>only</strong> render the content <strong>between</strong> the opening and closing tags, that probably means the other type of tags that don't have a closing tag is not going to be rendering text to the screen.
+						</aside>
+					</section>
+
+					<section id="tag-attributes" data-transition="slide" data-background="#1E68A7">
+						<h2 class="small-header">HTML Tag Anatomy</h2>
+						<div class="pre bm">
+							<div class="text-center pad-2em code" style="word-wrap: break-word;">
+								&lt;p <span class="text-highlight">id="unique" class="group"</span>&gt;Some Content&lt;/p&gt;
+							</div>
+						</div>
+						<p class="comment">
+							These are the <strong>attributes</strong>.
+						</p>
+						<ul class="comment">
+							<li>Attributes provide further description of the content or purpose of the tag</li>
+							<li>We can use these attributes to stype our page</li>	
+							<li>Attributes are always structured as 
+								<span class="text-highlight">key="value"</span>
+							</li>						
+						</ul>
+						<aside class="notes">
+							- Inside of the opening tag and <strong>only</strong> inside of the opening tag is where you'll find attributes. 
+							<br>
+							<br>
+							- Attributes always take this format: key = "value" (in quotes)
+							<br>
+							<br>
+							- Actually, in HTML5 - the quotes are optional but you'll see that almost every developer will still leave them in because it's better style and easier to read
+							<br>
+							<br>
+							- In fact, I've never seen anyone leave the quotes off - Rocco, Ellen? 
+							<br>
+							<br>
+							- So technically you can, but don't. :P						
+						</aside>
+					</section>
+
+					<section id="tag-id" data-transition="slide" data-background="#1E68A7">
+						<h2 class="small-header">HTML Tag Anatomy</h2>
+						<div class="pre bm">
+							<div class="text-center pad-2em code" style="word-wrap: break-word;">
+								&lt;p <span class="text-highlight">id="unique"</span> class="group"&gt;Some Content&lt;/p&gt;
+							</div>
+						</div>
+						<p class="comment">
+							This is the <strong>ID attribute</strong>.
+						</p>
+						<ul class="comment">
+							<li>Uniquely identifies an HTML element in a document</li>
+							<li>You can add this attribute to any tag</li>	
+							<li>Useful for styling and adding interaction</li>						
+						</ul>
+						<aside class="notes">
+							- You can add this attribute to any HTML element in your document
+							<br>
+							<br>
+							- The ID attribute's job is to uniquely identify a particular tag in the document
+							<br>
+							<br>
+							- That means in any given document, you can only have one p tag with the id of unique. You can't have multiple "unique" id tags. 
+							<br>
+							<br>
+							- Have to name the id something else 
+							<br>
+							<br>
+							- We'll be working more with id's when we get to the JS portion of this course: Example scenario - when you click on this specific button, you want a specific action to occur. ID's allow you to uniquely indentify that specific button because you may have multiple buttons on a page. 
+							<br>
+							<br>	
+							- You can also use it for styling purposes but it's generally not advised. We'll get into why next week but it has to do with CSS specificity
+							<br>
+							<br>
+							- To re-iterate, no two tags can have the same id in a given document. You use it to uniquely identify an element.
+						</aside>
+					</section>
+
+					<section id="tag-classes" data-transition="slide" data-background="#1E68A7">
+						<h2 class="small-header">HTML Tag Anatomy</h2>
+						<div class="pre bm">
+							<div class="text-center pad-2em code" style="word-wrap: break-word;">
+								&lt;p id="unique" <span class="text-highlight">class="group"</span>&gt;Some Content&lt;/p&gt;
+							</div>
+						</div>
+						<p class="comment">
+							This is the <strong>class attribute</strong>.
+						</p>
+						<ul class="comment">
+							<li>Enables you to group similar things together, like how cars and trucks are both automobiles</li>
+							<li>Useful for styling and adding interaction to <strong>many elements</strong> at once</li>						
+						</ul>
+						<aside class="notes">
+							- Classes are similar to ID's in that they're useful for styling and interaction purposes but that's where the similarities end
+							<br>
+							<br>
+							- ID's allow you to identify and select specific elements where as classes allow you to identify <strong>groups</strong> of elements
+							<br>
+							<br>
+							- Scroll down for car example
+						</aside>
+					</section>
+					<section id="tag-car-example" data-transition="slide" data-background="#1E68A7">
+						<p>Let's use a car example ...</p>
+					</section>
+					<section id="tag-parkinglot-example" data-transition="slide" data-background="#1E68A7">
+						<p>Let's say we're in a parking lot and we want to identify various vehicles ...</p>
+						<img src="http://illusion.scene360.com/wp-content/uploads/2013/09/aerial-shot-10.jpg" alt="Parking lot" width="600">
+						<aside class="notes">
+							(Read slide)
+							<br>
+							- There's a lot of different cars here in the parking lot. If we wanted to find a specific vehicle, what would we use?
+						</aside>
+					</section>
+					<section id="tag-id-example" data-transition="slide" data-background="#1E68A7">
+						<h2 class="small-header">HTML Tag Anatomy</h2>
+						<img src="http://www.plateshack.com/y2k/Ontario3/on2010jan.jpg" alt="License plate" width="600">
+						<p class="comment">
+							A license plate is like an ID
+						</p>						
+						<aside class="notes">
+							- We'd probably look up a license plate. 
+							<br>
+							<br>
+							- A license plate is like an ID. You can uniquely identify a car with a specific string of characters.
+							<br>
+							<br>
+							- Every combination of characters for a license plate is unique. So only one element per page can have a specific ID.
+						</aside>
+					</section>
+					<section id="tag-class-example" data-transition="slide" data-background="#1E68A7">
+						<h2 class="small-header">HTML Tag Anatomy</h2>
+						<img src="http://wohn-designtrend.de/wp-content/uploads/2012/08/autostadt03.jpg" width="600">
+						<p class="comment">
+							A car's model or colour is similar to a class
+						</p>						
+						<aside class="notes">
+							- Classes on the other hand, are more general. 
+							<br>
+							<br>
+							- Classes allow you to select a group of elements. So with the car example, if I wanted to find all the red cars, red would be an example of a class.
+						</aside>
+					</section>
+
+					<section id="self-closing-tags" data-transition="slide" data-background="#1E68A7">
+						<h2 class="small-header">HTML Tag Anatomy</h2>
+						<div class="pre bm">
+							<div class="text-center pad-2em code" style="word-wrap: break-word;">
+								&lt;img src="some-picture.jpg" <span class="text-highlight">/&gt;</span>
+							</div>
+						</div>
+						<p class="comment">
+							Some tags shouldn't have closing tags. They're <strong>self-closing</strong>.
+						</p>
+						<ul class="comment">
+							<li>This image tag represents an image in our document</li>
+							<li>It has a <span class="text-highlight">src</span> attribute that points to an image</li>
+							<li>Since the image <em>is</em> the content for this tag, we don't need a closing <span class="text-highlight">&lt;/img&gt;</span> tag - it's not allowed!</li>
+							<li>
+								The <span class="text-highlight">/</span> at the end is optional
+							</li>						
+						</ul>
+						<aside class="notes">
+							- This is an example of a self-closing tag
+							<br>
+							<br>
+							- This image tag represnts an image in our document
+							<br>
+							<br>
+							- You'll notice there's a new attribute we haven't seen before, it's the <strong>src</strong> attribute. This src attribute points to an image.
+							<br>
+							<br>
+							- The key thing here is that since the image <strong>IS</strong> the content for this tag, we don't need a closing tag because there's no content to put between an opening and closing tag.
+							<br>
+							<br>
+							- The content is included through the src attribute.
+							<br>
+							<br>
+							- The img tag isn't the only self-closing tag. We'll come across more as we continue through the course
+							<br>
+							<br>
+							- And the / is optional. I like Including it, it's more clear that the tag has ended. It's up to you :)
+						</aside>
+					</section>
+
+					<section id="html-hierarchy" data-transition="slide" data-background="#1E68A7">
+						<h2 class="small-header">Hierarchy in HTML</h2>
+						<pre style="margin: 0 auto;">
+							<code data-trim contenteditable>
+<article class="parent">
+	<h1 class="child">My Cool Title</h1>
+	<p class="child">Some awesome paragraph here</p>
+</article>
+							</code>
+						</pre>
+						<p class="comment" style="margin: 0">
+							HTML tags can be <span class="text-highlight">nested</span> inside one another.
+						</p>
+						<ul class="comment">
+							<li>HTML is represented as a <span class="text-highlight">tree</span></li>
+							<li>You can put tags inside other tags as their content</li>
+							<li>The outer tag is the <span class="text-highlight">parent</span> tag and the inner tag(s) are the <span class="text-highlight">children</span> tags
+							</li>						
+						</ul>
+						<aside class="notes">
+							- HTML has a hierarchical structure
+							<br>
+							<br>
+							- All the tags have a parent child relationship. Here you can see that the h1 and p tags are nested inside the article tag. The article is the PARENT. The p & h1 are the children.
+							<br>
+							<br>
+							- It's very much like a tree, we start with the root of the docuement, it's the the highest element up top and you branch out afterwards
+							<br>
+							<br>
+							- Many elements accept other HTML elements as their content, as you can see in article's case 
+							<br>
+							<br>
+							- And you can nest as deeply as you want.
+						</aside>
+					</section>
+				</section>
+
+				<section id="time-to-code">
+					<h2>Let's get started!</h2>
+					<img src="http://www2.bgsu.edu/departments/english/cconline/brown_mehler/gifs/girlTyping.gif" alt="Typing gif">
+					
+					<aside class="notes">
+						- Now that I've talked your ears off, we'll actually get down to coding.
+					</aside>
+				</section>
 			</div>
-
 		</div>
-
 		<script src="lib/js/head.min.js"></script>
 		<script src="js/reveal.js"></script>
 
